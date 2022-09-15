@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Montserrat:ital,wght@0,600;1,500&display=swap');
+:root{
+    --cream:rgb(225, 225, 237);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+}
+
+body{
+    background-image: url("images/img_3.png");
+    background-size:cover;
+    background-repeat: repeat-y;
+}
+.header, .top{
+    color:var(--cream);
+    box-shadow: 5px 5px 20px;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    font-family: Fraunces;
+    color:var(--cream);
+    background-color:rgba(225, 225, 225, .3);
+    padding:10px;
+    border-radius:15px;
+}
+.top{
+    display: flex; 
+    align-items: stretch;
+    justify-content:center;
+    margin:auto;
+    margin-top:90px;
+    width:450px;
+}
+.img{
+    display:flex;
+    width:200px;
+    height:auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+.txt{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    width:250px;
+    padding:15px;
+    color:var(--cream);
+    background: rgba(225, 225, 225, .3);
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.header-1{color:white}
+.sign-in{
+    color:white;
+    background-color:darkviolet;
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+    border-radius:10px;
+ }
