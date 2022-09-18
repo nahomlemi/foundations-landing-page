@@ -1,60 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Montserrat:ital,wght@0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap');
+/*////////////////////////////////////////////////////////////*/
 :root{
-    --cream:rgb(225, 225, 237);
-    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --dark-blue: #1F2937;
+    --light-blue: #3882F6;
+    --quote-background:#E5E7EB;
 }
-
 body{
-    background-image: url("images/img_3.png");
-    background-size:cover;
-    background-repeat: repeat-y;
+    margin:0px;
+    display:flex;
+    flex-direction:column;
+    font-family:Montserrat;
 }
-.header, .top{
-    color:var(--cream);
-    box-shadow: 5px 5px 20px;
+button{
+    border:none;
+    font-size: large;
+    font-weight:700;
+    cursor:pointer;
 }
+button:hover{
+    opacity:.8;
+}
+/*////////////////////////////////////////////////////////////*/
 .header{
     display:flex;
     align-items: center;
-    justify-content:space-between;
-    font-family: Fraunces;
-    color:var(--cream);
-    background-color:rgba(225, 225, 225, .3);
-    padding:10px;
-    border-radius:15px;
+    justify-content: space-around;
+    color:white;
+    background-color:var(--dark-blue);
 }
-.top{
-    display: flex; 
-    align-items: stretch;
-    justify-content:center;
-    margin:auto;
-    margin-top:90px;
-    width:450px;
+.header-logo{
+    font-size:24px;
 }
-.img{
+.s1, .s2, .s3{
+    font-size:18px;
+    font-weight:400;
+    margin-left:15px;   
+}
+/*////////////////////////////////////////////////////////////*/
+.top-center{
     display:flex;
-    width:200px;
-    height:auto;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius:10px;
+    justify-content: center;
+    padding-top:120px;
+    padding-bottom:140px;
+    background-color:var(--dark-blue)
 }
-.txt{
+.text-1{
     display:flex;
     flex-direction:column;
     align-items: flex-start;
-    width:250px;
-    padding:15px;
-    color:var(--cream);
-    background: rgba(225, 225, 225, .3);
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
-}
-.header-1{color:white}
-.sign-in{
+    width:400px;
     color:white;
-    background-color:darkviolet;
-    padding:10px;
-    padding-left:30px;
-    padding-right:30px;
+    padding:20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background:rgba(225, 225, 225, .3)
+
+}
+.top-header{
+    font-size:48px;
+    margin-top:-5px;
+}
+.top-paragrahp{
+    font-size:20px;
+    margin-top:-20px;
+    margin-bottom:40px;
+}
+.top-button{
+    padding: 10px 40px;
+    color:white;
+    background-color:var(--light-blue);
     border-radius:10px;
- }
+
+}
+.img-1{
+    width:300px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+/*////////////////////////////////////////////////////////////*/
+.bottom-center{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:50px;
+    padding-bottom:10px;
+}
+.text-2{
+    font-size:30px;
+    color:var(--dark-blue);
+}
+.box{
+    display:flex;
+}
+.about-me, .my-skills, .my-porfolio, .contact-me{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    color: var(--dark-blue);
+    width:200px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+.about-me-img,.my-skills-img, .my-porfolio-img, .contact-me-img{
+    width:200px;
+    height:200px;
+    margin:10px;
+    margin-left: 20px;
+    margin-right:20px;
+    border-radius:10px;
+    background-color:rgba(225, 225, 225, .8);
+    border: 4px solid var(--light-blue);
+}
+/*////////////////////////////////////////////////////////////*/
+.footer{
+    margin-top:70px;
+    padding:100px 250px;
+    background-color:var(--quote-background);
+}
+.quote{
+    font-size:36px;
+    font-style: italic;
+}
+.name{
+    font-size:24px;
+    font-weight:700;
+    padding-left:500px;
+}
+/*////////////////////////////////////////////////////////////*/
+.ad{
+    display:flex;
+    color:white;
+    justify-content:space-around;
+    padding:10px;
+    background-color:var(--light-blue);
+    margin:90px 250px;
+    border-radius:15px;
+}
+.ad-paragraph{
+    font-size:16px;
+}
+.ad-button{
+    color:white;
+    background-color:var(--light-blue);
+    border:3px solid white;
+    border-radius:15px;
+    font-size:20px;
+    margin:35px;
+    padding:5px 40px;
+}
+
+.footer{
+    color:white;
+    background-color:var(--dark-blue);
+    text-align:center;
+    padding:40px;
+
+}
